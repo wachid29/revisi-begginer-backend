@@ -116,14 +116,13 @@ PORT2 = //port database
 
 ## REST API and DB
 
-You can download and import Postman [here]()
+You can download and import Postman 
 </br>
-[![Download and Import Postman](https://drive.google.com/drive/folders/1aEVxOuCJMe7muxRbRvhZEBqQizUwXXcw?usp=sharing)]()
+- [Download and Import Postman](https://drive.google.com/drive/folders/1aEVxOuCJMe7muxRbRvhZEBqQizUwXXcw?usp=sharing)
 
-You can download and import database [here]()
+You can download and import database
 </br>
-[![Download and Import Database](https://drive.google.com/drive/folders/1zH8Qz1YpkLjaAv0mYK5-Gfqc_zzFgGWF?usp=sharing)]()
-
+- [Download and Import Database](https://drive.google.com/drive/folders/1zH8Qz1YpkLjaAv0mYK5-Gfqc_zzFgGWF?usp=sharing)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
