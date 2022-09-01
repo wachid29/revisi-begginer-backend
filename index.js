@@ -4,6 +4,7 @@ require("dotenv").config();
 const port = process.env.PORT;
 const bodyParser = require("body-parser");
 const helmet = require("helmet");
+const xss = require("xss-clean");
 
 const userDataRoutes = require("./routes/userDataRoutes");
 const commentRoutes = require("./routes/commentRoutes");
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/images", express.static("images"));
 
+app.use(xss());
 // Define all routes userdata
 app.use("/", userDataRoutes);
 app.use("/", commentRoutes);
