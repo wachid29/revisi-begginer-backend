@@ -16,7 +16,7 @@ const getComment = async (req, res) => {
 
 const getCommentPage = async (req, res) => {
   try {
-    const { limit, page } = req.body;
+    const { limit, page } = req.query;
     const getDataComment = await model.getCommentPages(limit, page);
     if (getDataComment?.rowCount) {
       res.status(200).json({
@@ -34,7 +34,7 @@ const getCommentPage = async (req, res) => {
 
 const findComment = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
     const getDataComment = await model.findCommentbyID(id);
     if (getDataComment?.rowCount) {
       res.status(200).json({
@@ -92,7 +92,7 @@ const editComment = async (req, res) => {
 
 const deleteComment = async (req, res) => {
   try {
-    const { id } = req.body;
+    const { id } = req.params;
     const getDataComment = await model.findCommentbyID(id);
     if (getDataComment?.rowCount) {
       const deletedComment = await model.deletedComment(id);

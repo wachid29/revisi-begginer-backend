@@ -7,13 +7,13 @@ Router.get("/comment", controller.getComment);
 
 Router.get("/comment/pages", controller.getCommentPage);
 
-Router.get("/comment/find", controller.findComment);
+Router.get("/comment/find/:id", controller.findComment);
 
 Router.post("/comment/add", controller.addComment);
 
 Router.patch("/comment/edit", controller.editComment);
 
-Router.delete("/comment/delete", controller.deleteComment);
+Router.delete("/comment/delete/:id", controller.deleteComment);
 
 Router.get("/commentbyrecipe", controller.commentByRecipe);
 

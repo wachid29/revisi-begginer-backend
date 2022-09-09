@@ -13,7 +13,7 @@ Router.post("/userdata/add", controller.addUsers);
 // EDIT USER
 Router.patch("/userdata/edit", controller.editUsers);
 // DELETE USER
-Router.delete("/userdata/delete", controller.deleteUsers);
+Router.delete("/userdata/delete/:id", controller.deleteUsers);
 
 Router.get("/recipebyuser", controller.recipeByUser);
 
